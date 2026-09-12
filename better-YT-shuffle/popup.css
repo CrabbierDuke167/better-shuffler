@@ -1,0 +1,91 @@
+/* 
+┌─────────────────────────────────────┐
+│  better shuffler™                   │
+│  made with questionable codes       │
+│  "if it works then don't touch it"  │
+└─────────────────────────────────────┘ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 330px;
+  background: #0d0d0f;
+  color: #f5f5f7;
+  font: 14px/1.45 'Inter', Arial, sans-serif;
+}
+
+main {
+  padding: 18px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: .16em;
+  color: #a1a1aa;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 4px 0 5px;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+
+.desc {
+  margin: 0 0 16px;
+  color: #a1a1aa;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 12px;
+  margin-top: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: #fff;
+  color: #111;
+}
+
+button:disabled {
+  opacity: .55;
+  cursor: wait;
+}
+
+button.secondary {
+  background: #222226;
+  color: #eee;
+}
+
+.status {
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 9px;
+  background: #18181b;
+  color: #d4d4d8;
+}
+
+.status.ok {
+  border: 1px solid #285f3b;
+  color: #a7f3d0;
+}
+
+.status.error {
+  border: 1px solid #6b2b2b;
+  color: #fecaca;
+}
+
+.stats {
+  margin-top: 8px;
+  color: #71717a;
+  font-size: 12px;
+}

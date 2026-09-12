@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Better Shuffler",
+  "version": "1.0.0",
+  "description": "Strictly shuffles a YouTube Mix, adds fresh recommendations, prevents YouTube autoplay from breaking the queue, and shows playback status.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "assets/icon.png"
+    }
+  },
+  "icons": {
+    "128": "assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
